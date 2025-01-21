@@ -80,6 +80,11 @@
 
   keymap {
     compatible = "zmk,keymap";
+    
+    reset: reset {
+        label = "Reset";
+        gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
+    };
 
     default_layer {
       bindings = <
