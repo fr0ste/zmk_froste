@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: Rirdical
+      url-base: https://github.com/Rirdical
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
+      remote: Rirdical
+      revision: 717bbae7
   self:
     path: config
