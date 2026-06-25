@@ -22,4 +22,4 @@ include:
   - board: nice_nano//zmk
     shield: corne_left
   - board: nice_nano//zmk
-    shield: corne_right corne_cat
+    shield: corne_right
