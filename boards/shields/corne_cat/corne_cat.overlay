@@ -1,0 +1,3 @@
+/* corne_cat shield: solo provee codigo de display (custom status screen).
+ * No hay device tree nodes propios — se compone sobre corne_left/right.
+ */
