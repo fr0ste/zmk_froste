@@ -5,6 +5,10 @@ LV_FONT_DECLARE(lv_font_unscii_8);
 
 lv_obj_t *zmk_display_status_screen(void) {
     lv_obj_t *screen = lv_obj_create(NULL);
+    lv_obj_set_style_bg_color(screen, lv_color_black(), 0);
+    lv_obj_set_style_bg_opa(screen, LV_OPA_COVER, 0);
+    lv_obj_set_style_pad_all(screen, 0, 0);
+    lv_obj_set_style_border_width(screen, 0, 0);
 
     lv_obj_t *cat = lv_label_create(screen);
     lv_label_set_text(cat,
@@ -12,6 +16,8 @@ lv_obj_t *zmk_display_status_screen(void) {
                       "( o.o )\n"
                       " > ^ <");
     lv_obj_set_style_text_font(cat, &lv_font_unscii_8, 0);
+    lv_obj_set_style_text_color(cat, lv_color_white(), 0);
+    lv_obj_set_style_bg_opa(cat, LV_OPA_TRANSP, 0);
     lv_obj_set_x(cat, 4);
     lv_obj_set_y(cat, 32);
 
